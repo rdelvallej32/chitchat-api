@@ -39,8 +39,9 @@ ActiveRecord::Schema.define(version: 20160604121808) do
   create_table "topics", force: :cascade do |t|
     t.text     "content"
     t.string   "category"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "nyt_article", default: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "users", force: :cascade do |t|
