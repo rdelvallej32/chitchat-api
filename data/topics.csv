@@ -1,0 +1,71 @@
+content,category,nyt_article
+Would you rather work four 10-hour days or five eight-hour days?,work,FALSE
+"If you were guaranteed to be successful, what job would you want?",work,FALSE
+What was your first job?,work,FALSE
+What’s the best career advice you’ve ever received?,work,FALSE
+What surprised you the most about your current job?,work,FALSE
+"If you weren’t working here, what would you probably be doing right now?",work,FALSE
+Are you reading any good books right now? I’d love some recommendations.,entertainment,FALSE
+Are you watching any good shows right now? I’d love some recommendations.,entertainment,FALSE
+Are there any apps on your phone that you can’t live without?,entertainment,FALSE
+"If you could only watch one genre of movies for the rest of your life, what would it be?",entertainment,FALSE
+"What’s a book you hated that everyone else loved, and vice versa?",entertainment,FALSE
+Do you have any podcast suggestions for my commute?,entertainment,FALSE
+What’s the last movie that made you laugh aloud?,entertainment,FALSE
+Whom would you want to be your Amazing Race partner?,entertainment,FALSE
+Who is your favorite person to follow on Instagram?,entertainment,FALSE
+"If you could only eat one thing for the rest of your life, what would it be?",food,FALSE
+What’s the weirdest thing you’ve ever eaten?,food,FALSE
+What’s your go-to comfort food?,food,FALSE
+Are there any foods that you absolutely would not eat?,food,FALSE
+What are the best cheap eats around here?,food,FALSE
+Does your family have any “secret” or famous recipes?,food,FALSE
+What’s your favorite restaurant that other people don’t tend to know about?,food,FALSE
+What’s the best “hidden gem” around here?,travel,FALSE
+"If you could fly anywhere for free, where would you go?",travel,FALSE
+What’s the coolest road trip you’ve ever been on?,travel,FALSE
+Where’s the last place you traveled? What did you do there?,travel,FALSE
+Do you prefer action-packed vacations or relaxing on the beach?,travel,FALSE
+What’s the next trip you have planned?,travel,FALSE
+"If you could take a workcation or sabbatical, where would you go and what would you do?",travel,FALSE
+What’s your favorite thing to do around here on the weekends?,travel,FALSE
+Where did you live before this? What are the biggest differences you see?,life,FALSE
+What did you think you were going to be growing up?,life,FALSE
+Do you have any hidden talents or surprising hobbies?,life,FALSE
+What was your favorite extracurricular in elementary school?,life,FALSE
+What was the must-have accessory or item when you were growing up?,life,FALSE
+What’s the most unbelievable thing that’s ever happened to you?,life,FALSE
+Who’s the most important role model or mentor you’ve had in your life?,life,FALSE
+What’s the best piece of advice you’ve ever received?,life,FALSE
+"if you were in charge of picking the eighth wonder of the world, what would you choose?",hypothetical,FALSE
+What do you wish you had placed in a time capsule 15 years ago?,miscellaneous,FALSE
+What’s the strangest compliment you’ve ever gotten?,miscellaneous,FALSE
+"Have you ever thought of a cool invention or company, only to discover someone had already invented or started it?",miscellaneous,FALSE
+"If you could teach a college course on any subject you want, what would it be?",hypothetical,FALSE
+What’s the most out-of-character thing you’ve ever done?,miscellaneous,FALSE
+What would be your ideal superpower?,miscellaneous,FALSE
+"If you could have any type of animal for a pet, what would it be?",miscellaneous,FALSE
+Where is the furthest place you’ve ever travelled to?,travel,FALSE
+If you were stuck in an elevator with someone you truly admired,hypothetical,FALSE
+You just found a genie in a bottle. What would your three wishes be?,hypothetical,FALSE
+Aliens just landed and want you to share with them the five best foods in the world. What would you give them to try out?,hypothetical,FALSE
+"If a movie was made about your life, what famous actor or actress would play you?",hypothetical,FALSE
+Did you hear about? (Share something interesting about this current event from the New York Times):,world,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,business,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,technology,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,science,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,health,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,sports,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,arts,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,books,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,movies,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,fashion,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,food,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,travel,TRUE
+Did you hear about? (Share something interesting about this current event from the New York Times):,home,TRUE
+What brought you to the city?,life,FALSE
+"Are you in the (insert industry), too? (e.g. Are you in the film industry, too?)",work,FALSE
+What made you go into (insert career)? (e.g. What made you go into psychiatry?),work,FALSE
+What’s your favorite thing about (insert career work)? (e.g What’s your favorite thing about teaching?),work,FALSE
+Can you recommend any conferences I should attend as a (insert career)? (e.g. Can you recommend any conferences I should attend as a writer)?,work,FALSE
+Where’s your favorite business-trip destination?,work,FALSE
