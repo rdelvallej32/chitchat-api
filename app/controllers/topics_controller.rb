@@ -19,9 +19,13 @@ class TopicsController < OpenReadController
   def randomshow
     @topics_array = Topic.all
     @random_topic = @topics_array.sample
-
     @section = @random_topic.category
-    render json: @random_topic
+
+    if @random_topic.nyt_article == true
+      puts 'passed through the test if it is a nyt question'
+    else
+      render json: @random_topic
+    end
   end
 
   # POST /topics
