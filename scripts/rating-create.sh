@@ -6,8 +6,8 @@ curl --include --request POST http://localhost:3000/ratings \
   --header "Content-Type: application/json" \
   --data '{
     "rating": {
-      "score": "2",
+      "score": "6",
       "user_id": "2",
-      "topic_id": "1"
+      "topic_id": "2"
     }
   }'
