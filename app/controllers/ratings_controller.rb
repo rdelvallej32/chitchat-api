@@ -1,5 +1,7 @@
-class RatingsController < ApplicationController
-  before_action :set_rating, only: [:show, :update, :destroy]
+# Ratings allow users to do CRUD
+class RatingsController < ProtectedController
+  before_action :set_rating, only: [:update, :destroy]
+  skip_before_action :authenticate, only: [:index, :show]
 
   # GET /ratings
   # GET /ratings.json
@@ -18,7 +20,7 @@ class RatingsController < ApplicationController
   # POST /ratings
   # POST /ratings.json
   def create
-    @rating = Rating.new(rating_params)
+    @rating = current_user.ratings.build(rating_params)
 
     if @rating.save
       render json: @rating, status: :created, location: @rating
@@ -49,11 +51,11 @@ class RatingsController < ApplicationController
 
   private
 
-    def set_rating
-      @rating = Rating.find(params[:id])
-    end
+  def set_rating
+    @rating = Rating.find(params[:id])
+  end
 
-    def rating_params
-      params.require(:rating).permit(:score, :user_id, :topic_id)
-    end
+  def rating_params
+    params.require(:rating).permit(:score, :user_id, :topic_id)
+  end
 end
