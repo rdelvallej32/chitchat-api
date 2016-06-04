@@ -52,7 +52,7 @@ class RatingsController < ProtectedController
   private
 
   def set_rating
-    @rating = Rating.find(params[:id])
+    @rating = current_user.ratings.find(params[:id])
   end
 
   def rating_params
