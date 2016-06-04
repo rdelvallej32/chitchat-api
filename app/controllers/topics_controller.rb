@@ -16,6 +16,14 @@ class TopicsController < OpenReadController
     render json: @topic
   end
 
+  def randomshow
+    @topics_array = Topic.all
+    @random_topic = @topics_array.sample
+
+    @section = @random_topic.category
+    render json: @random_topic
+  end
+
   # POST /topics
   # POST /topics.json
   def create
