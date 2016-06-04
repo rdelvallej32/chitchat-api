@@ -1,5 +1,6 @@
-class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :update, :destroy]
+# Topic Controller: All users can see topics
+class TopicsController < OpenReadController
+  before_action :set_topic, only: [:show]
 
   # GET /topics
   # GET /topics.json
@@ -49,11 +50,11 @@ class TopicsController < ApplicationController
 
   private
 
-    def set_topic
-      @topic = Topic.find(params[:id])
-    end
+  def set_topic
+    @topic = Topic.find(params[:id])
+  end
 
-    def topic_params
-      params.require(:topic).permit(:content, :category)
-    end
+  def topic_params
+    params.require(:topic).permit(:content, :category)
+  end
 end
