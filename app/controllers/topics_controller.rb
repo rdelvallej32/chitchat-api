@@ -20,19 +20,20 @@ class TopicsController < OpenReadController
     @topics_array = Topic.all
     @random_topic = @topics_array.sample
     @section = @random_topic.category
-    @test = 'sports'
     @json = 'json'
+    @nyt = ENV['NEW_YORK_TIMES_KEY']
 
     if @random_topic.nyt_article == true
-      uri = URI("https://api.nytimes.com/svc/topstories/v2/#{@test}.#{@json}")
+      uri = URI("https://api.nytimes.com/svc/topstories/v2/#{@section}.#{@json}")
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
-      uri.query = URI.encode_www_form({
-        "api-key" => "e4b1d473ba1d49f2901fdb63ba0319a3"
-        })
-        request = Net::HTTP::Get.new(uri.request_uri)
-        @result = JSON.parse(http.request(request).body)
-        puts @result['results']
+      uri.query = URI.encode_www_form('api-key' => @nyt)
+      request = Net::HTTP::Get.new(uri.request_uri)
+      @result = JSON.parse(http.request(request).body)
+      @array_of_results = @result['results']
+      @first_article = @array_of_results.first
+
+      render json: @first_article
     else
       render json: @random_topic
     end
