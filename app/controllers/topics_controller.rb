@@ -1,6 +1,6 @@
 # Topic Controller: All users can see topics
 class TopicsController < OpenReadController
-  before_action :set_topic, only: [:show]
+  before_action :set_topic, only: [:show, :randomshow]
 
   # GET /topics
   # GET /topics.json
