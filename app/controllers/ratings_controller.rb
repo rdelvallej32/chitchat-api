@@ -1,7 +1,7 @@
 # Ratings allow users to do CRUD
 class RatingsController < ProtectedController
-  before_action :set_rating, only: [:update, :destroy]
-  skip_before_action :authenticate, only: [:index, :show]
+  before_action :set_rating, only: [:show, :update, :destroy]
+  # skip_before_action :authenticate, only: [:index, :show]
 
   # GET /ratings
   # GET /ratings.json

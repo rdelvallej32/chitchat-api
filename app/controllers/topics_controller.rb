@@ -1,6 +1,6 @@
 # Topic Controller: All users can see topics
-class TopicsController < OpenReadController
-  before_action :set_topic, only: [:show, :randomshow]
+class TopicsController < ProtectedController
+  before_action :set_topic, only: [:update, :destroy]
 
   # GET /topics
   # GET /topics.json
@@ -74,7 +74,7 @@ class TopicsController < OpenReadController
   private
 
   def set_topic
-    @topic = Topic.find(params[:id])
+    @topic = current_user.topics.find(params[:id])
   end
 
   def topic_params
