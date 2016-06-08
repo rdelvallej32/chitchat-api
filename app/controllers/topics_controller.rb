@@ -16,14 +16,21 @@ class TopicsController < ProtectedController
     render json: Topic.find(params[:id])
   end
 
+  # Get /random-show
+  # Gets a random topic
   def randomshow
     @topics_array = Topic.all
     @random_topic = @topics_array.sample
-    @section = @random_topic.category
+
+    render json: @random_topic
+  end
+
+  def shownyt
+    @sections = ['home', 'world', 'national', 'business', 'technology', 'science', 'health', 'sports', 'books', 'movies', 'fashion', 'travel']
+    @section = @sections.sample
     @json = 'json'
     @nyt = ENV['NEW_YORK_TIMES_KEY']
 
-    if @random_topic.nyt_article == true
       uri = URI("https://api.nytimes.com/svc/topstories/v2/#{@section}.#{@json}")
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
@@ -34,9 +41,6 @@ class TopicsController < ProtectedController
       @first_article = @array_of_results.first
 
       render json: @first_article
-    else
-      render json: @random_topic
-    end
   end
 
   # POST /topics

@@ -32,7 +32,7 @@ class RatingsController < ProtectedController
   # PATCH/PUT /ratings/1
   # PATCH/PUT /ratings/1.json
   def update
-    @rating = Rating.find(params[:id])
+    # @rating = Rating.find(params[:id])
 
     if @rating.update(rating_params)
       head :no_content
