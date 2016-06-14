@@ -1,6 +1,6 @@
 # A Topic Generator API
 
-An API to store topics and ratings of each topic. Additionally, the New York Times API is configured to make
+An API to store topics and ratings of each topic. Additionally, the New York Times API is configured to make calls to the New York Times Top Stories API when the user call the custom route.
 
 # A Topic Generator API
 
